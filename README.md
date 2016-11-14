@@ -14,7 +14,7 @@ To complie the program,
 
 To run the program,
 
-> sim_ds <ROB_SIZE\> <IQ_SIZE\> <WIDTH\> <CACHE_SIZE\> <P\> <tracefile\>
+> sim_ds < ROB_SIZE \> < IQ_SIZE \> < WIDTH \> < CACHE_SIZE \> < P \> < tracefile \>
 
 ### Input
 
@@ -33,7 +33,7 @@ The output of program includes
 
 1. Situaition of every instruction:
 
-> <seq_no\> fu{<op_type\>} src{<src1\>,<src2\>} dst{<dst\>} FE{<begin-cycle\>,<duration\>} DE{…} RN{…} RR{…} DI{…} IS{…} EX{…} WB{…} RT{…}
+> < seq_no \> fu{< op_type \>} src{< src1 \>,< src2 \>} dst{< dst \>} FE{< begin-cycle \>,< duration \>} DE{…} RN{…} RR{…} DI{…} IS{…} EX{…} WB{…} RT{…}
 
 2. some measurements
 
@@ -51,23 +51,23 @@ The output of program includes
 
 The simulator reads a trace file in the following format: 
 
-<PC> <operation type> <dest reg #> <src1 reg #> <src2 reg #>
+< PC \> < operation type \> < dest reg # \> < src1 reg \# \> < src2 reg \# \>
 
-<PC> <operation type> <dest reg #> <src1 reg #> <src2 reg #>
+< PC \> < operation type \> < dest reg # \> < src1 reg \# \> < src2 reg \# \>
 
 ...
 
 Where:
 
-o <PC> is the program counter of the instruction (in hex).
+o < PC \> is the program counter of the instruction (in hex).
 
-o <operation type> is either “0”, “1”, or “2”.
+o < operation type \> is either “0”, “1”, or “2”.
 
-o <dest reg #> is the destination register of the instruction. If it is ‐1, then the instruction does not have a destination register (for example, a conditional branch instruction). Else, it is between 0 and 66.
+o < dest reg # \> is the destination register of the instruction. If it is ‐1, then the instruction does not have a destination register (for example, a conditional branch instruction). Else, it is between 0 and 66.
 
-o <src1 reg #> is the first source register of the instruction. If it is ‐1, then the instruction does not have a first source register. Else, it is between 0 and 66.
+o < src1 reg # \> is the first source register of the instruction. If it is ‐1, then the instruction does not have a first source register. Else, it is between 0 and 66.
 
-o <src2 reg #> is the second source register of the instruction. If it is ‐1, then the instruction does not have a second source register. Else, it is between 0 and 66.
+o < src2 reg # \> is the second source register of the instruction. If it is ‐1, then the instruction does not have a second source register. Else, it is between 0 and 66.
 
 For example:
 
