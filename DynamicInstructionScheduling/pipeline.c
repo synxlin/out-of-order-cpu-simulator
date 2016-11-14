@@ -225,7 +225,7 @@ void Fetch()
 			Block instr_block = Read(instr.instr_data.pc);
 			instr.cycle = instr_block.cycle;
 
-			if (instr_block.cycle == 0)
+			if (instr_block.cycle == 0 || instr_block.prefetch_Bit == PREFETCH)
 				pipelineStat.hit++;
 			if (instr_block.prefetch_Bit == PREFETCH)
 				pipelineStat.prefetch_hit++;

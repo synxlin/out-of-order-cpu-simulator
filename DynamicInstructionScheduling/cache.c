@@ -150,7 +150,6 @@ void Cache_Prefetch(uint32_t addr)
 	cache->set[index].block[way_num].tag = tag;
 	cache->set[index].block[way_num].cycle = PREFETCH_PENALTY;
 	cache->set[index].block[way_num].prefetch_Bit = PREFETCH;
-
 	Rank_Maintain(index, way_num);
 }
 /*
