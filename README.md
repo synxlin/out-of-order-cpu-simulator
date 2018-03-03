@@ -1,8 +1,8 @@
-# Project 3 - Dynamic Instruction Scheduling
+# Out-of-order CPU Simulator (Dynamic Instruction Scheduling)
 
 ## Introduction
 
-This is a dynamic instruction scheduling simulator.
+This is a out-of-order CPU simulator (dynamic instruction scheduling simulator).
 
 ## Usage
 
