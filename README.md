@@ -1,4 +1,7 @@
-# Out-of-order CPU Simulator (Dynamic Instruction Scheduling)
+Out-of-order CPU Simulator (Dynamic Instruction Scheduling)
+=============================================================
+
+(Latest update: 2016/11/30)
 
 ## Introduction
 
